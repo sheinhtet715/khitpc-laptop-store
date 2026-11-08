@@ -1,0 +1,89 @@
+
+body {
+    background-color: #f4f6f9;
+}
+
+.cart-item-row {
+    transition: background-color 0.2s ease;
+}
+
+.cart-item-row:last-child {
+    border-bottom: none !important;
+}
+
+.cart-item-row:hover {
+    background-color: #f8fafc !important;
+}
+
+.cart-img-wrap {
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.mix-blend-multiply {
+    mix-blend-mode: multiply;
+}
+
+.hover-brand {
+    transition: color 0.2s ease;
+}
+.hover-brand:hover {
+    color: var(--brand-red, #d32f2f) !important;
+}
+
+.remove-item-btn {
+    transition: all 0.2s ease;
+}
+.remove-item-btn:hover {
+    color: #b91c1c !important;
+    text-decoration: underline !important;
+}
+
+.qty-select {
+    cursor: pointer;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.qty-select:focus {
+    border-color: #94a3b8;
+    box-shadow: 0 0 0 3px rgba(148, 163, 184, 0.15);
+}
+.qty-select:disabled {
+    opacity: 0.7;
+    cursor: wait;
+}
+
+.sticky-top {
+    z-index: 1020;
+}
+
+#summaryDiscount {
+    letter-spacing: 0.5px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+.place-order-animated-btn {
+    font-family: 'Montserrat', sans-serif !important;
+    overflow: hidden; 
+    transition: all 0.3s ease;
+}
+
+.place-order-animated-btn.final {
+    background-color: var(--brand-red, #d32f2f) !important;
+}
+
+.img-fluid.mix-blend-multiply {
+    mix-blend-mode: multiply;
+}
+
+.animated-dots {
+    display: inline-block;
+    width: 2ch;
+    text-align: left;
+}
+
+@media (max-width: 767.98px) {
+    .border-md-0 {
+        border: none !important;
+    }
+}

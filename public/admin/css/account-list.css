@@ -1,0 +1,142 @@
+
+/* The Main Card Wrapper */
+.premium-table-card {
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+    overflow: hidden;
+}
+
+/* Card Header & Search Area */
+.premium-card-header {
+    background: #ffffff;
+    padding: 20px 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.premium-search-form .input-group {
+    background: #f8f9fc;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.premium-search-form .input-group:focus-within {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.premium-search-form .form-control {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    padding: 10px 16px;
+}
+
+.premium-search-form .btn {
+    border: none;
+    background: transparent;
+    color: #64748b;
+    padding: 0 16px;
+}
+
+.premium-search-form .btn:hover {
+    color: #0f172a;
+}
+
+/* Table */
+.premium-table {
+    margin-bottom: 0;
+}
+
+.premium-table thead th {
+    background: #f8fafc;
+    color: #475569;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #e2e8f0;
+    padding: 16px 24px;
+    white-space: nowrap;
+}
+
+.premium-table tbody td {
+    padding: 16px 24px;
+    vertical-align: middle;
+    color: #334155;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.premium-table tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+/* Avatars */
+.avatar-cell {
+    width: 60px;
+}
+
+.avatar-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* Soft Pill Badges */
+.badge-soft {
+    padding: 6px 12px;
+    border-radius: 50rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.3px;
+}
+
+.badge-admin {
+    background-color: #fee2e2;
+    color: #dc2626;
+}
+
+.badge-superadmin {
+    background-color: #f3e8ff;
+    color: #9333ea;
+}
+
+.badge-user {
+    background-color: #e0f2fe;
+    color: #0284c7;
+}
+
+/* Action Buttons */
+.action-btn {
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+    color: #64748b;
+    background: #f1f5f9;
+}
+
+.action-btn-danger:hover {
+    background: #fee2e2;
+    color: #dc2626;
+    border-color: #fca5a5;
+}
+
+.platform-icon {
+    font-size: 1.2rem;
+}

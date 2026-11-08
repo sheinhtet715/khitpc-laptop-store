@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign in — Khit PC</title>
+
+  <!-- Bootstrap CSS + Icons + Font Awesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ asset('user/authentication/css/login.css') }}">
+</head>
+<body>
+
+  <div class="shadow-sm auth-card" role="main" aria-labelledby="authHeading">
+
+    <!-- Visual / Branding column (hidden on small screens) -->
+    <aside class="auth-visual d-none d-lg-flex" style="
+    background:
+      linear-gradient(135deg, rgba(211,47,47,0.06), rgba(255,112,67,0.04)),
+      url('{{ asset('user/authentication/image/laptop_login.jpg') }}');
+">
+      <div>
+        <div class="brand">Khit PC</div>
+        <div class="visual-title">Find the right laptop for your needs</div>
+        <div class="visual-sub">Secure sign in and easy account management. Sign up to save favorites, view orders, and faster checkout.</div>
+      </div>
+    </aside>
+
+    @yield('content')
+  </div>
+
+  <!-- Bootstrap JS bundle (tabs/modals etc.) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="{{ asset('user/authentication/js/login.js') }}"></script>
+</body>
+</html>
